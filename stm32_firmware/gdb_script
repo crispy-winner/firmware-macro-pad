@@ -1,0 +1,7 @@
+set pagination off
+target extended-remote localhost:3333
+file build/stm32_firmware.elf
+load
+print "STARTING PROGRAM"
+r
+quit
